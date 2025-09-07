@@ -1,0 +1,13 @@
+.board {
+  display: grid;
+  gap: 1rem; // default ~16px
+
+  @media (max-width: 480px) {
+    gap: 0.5rem; // tighter on small screens
+  }
+
+  @media (max-width: 360px) {
+    gap: 0.25rem; // even tighter at 320px
+  }
+}
+

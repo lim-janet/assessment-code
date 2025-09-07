@@ -1,0 +1,34 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6; // Tailwind gray-100
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 1.875rem; // ~text-3xl
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem; // shrink on small screens
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.25rem; // fits inside 320px
+  }
+}
+
+
+.boardWrapper {
+  border: 1px  #000000;   /* Tailwind blue-600 */
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* shrink to fit the cards */
+}
